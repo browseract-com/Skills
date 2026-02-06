@@ -5,6 +5,24 @@ description: This skill is designed to help users automatically extract business
 
 # Google Maps Search Automation Skill
 
+## ✨ Platform Compatibility
+
+**✅ Works Powerfully & Reliably On All Major AI Assistants**
+
+| Platform | Status | How to Install |
+|----------|--------|----------------|
+| **OpenCode** | ✅ Fully Supported | Copy skill folder to `~/.opencode/skills/` |
+| **Claude Code** | ✅ Fully Supported | Native skill support |
+| **Cursor** | ✅ Fully Supported | Copy to `~/.cursor/skills/` |
+| **OpenClaw** | ✅ Fully Supported | Compatible |
+
+**Why Choose BrowserAct Skills?**
+- 🚀 Stable & crash-free execution
+- ⚡ Fast response times
+- 🔧 No configuration headaches
+- 📦 Plug & play installation
+- 💬 Professional support
+
 ## 📖 Introduction
 This skill provides a one-stop business data collection service through the BrowserAct Google Maps Search API template. Obtain structured business data with just one command.
 

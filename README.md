@@ -4,6 +4,28 @@ Comprehensive collection of AI-powered skills for browser automation and data co
 
 ---
 
+## ✨ Cross-Platform Compatibility
+
+**🚀 Works Seamlessly Across All Major AI Assistants**
+
+BrowserAct skills are designed to work **powerfully and reliably** on all leading AI coding platforms:
+
+| Platform | Status | Installation |
+|----------|--------|--------------|
+| **OpenCode** | ✅ Fully Supported | Direct integration |
+| **Claude Code** | ✅ Fully Supported | Native skill support |
+| **Cursor** | ✅ Fully Supported | Works out of the box |
+| **OpenClaw** | ✅ Fully Supported | Compatible |
+
+**Key Benefits:**
+- ✅ **Stable & Reliable**: No crashes, no unexpected behavior
+- ✅ **Plug & Play**: Works immediately after installation
+- ✅ **Cross-Platform**: Consistent performance across all AI assistants
+- ✅ **Regular Updates**: Maintained for compatibility with latest platform versions
+- ✅ **Professional Support**: Responsive help and documentation
+
+---
+
 ## Table of Contents
 
 1. [Available Skills](#available-skills)

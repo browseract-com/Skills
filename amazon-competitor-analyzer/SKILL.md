@@ -7,6 +7,24 @@ description: Scrapes Amazon product data from ASINs using browseract.com automat
 
 This skill scrapes Amazon product data from user-provided ASINs using browseract.com's browser automation API and performs deep competitive analysis. It compares specifications, pricing, review quality, and visual strategies to identify competitor moats and vulnerabilities.
 
+## ✨ Platform Compatibility
+
+**✅ Works Powerfully & Reliably On All Major AI Assistants**
+
+| Platform | Status | How to Install |
+|----------|--------|----------------|
+| **OpenCode** | ✅ Fully Supported | Copy skill folder to `~/.opencode/skills/` |
+| **Claude Code** | ✅ Fully Supported | Native skill support |
+| **Cursor** | ✅ Fully Supported | Copy to `~/.cursor/skills/` |
+| **OpenClaw** | ✅ Fully Supported | Compatible |
+
+**Why Choose BrowserAct Skills?**
+- 🚀 Stable & crash-free execution
+- ⚡ Fast response times
+- 🔧 No configuration headaches
+- 📦 Plug & play installation
+- 💬 Professional support
+
 ## When to Use This Skill
 
 - Competitive research: Input multiple ASINs to understand market landscape

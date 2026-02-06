@@ -5,6 +5,24 @@ description: Scrapes LinkedIn profiles, company pages, and job postings using br
 
 # LinkedIn Scraper
 
+## ✨ Platform Compatibility
+
+**✅ Works Powerfully & Reliably On All Major AI Assistants**
+
+| Platform | Status | How to Install |
+|----------|--------|----------------|
+| **OpenCode** | ✅ Fully Supported | Copy skill folder to `~/.opencode/skills/` |
+| **Claude Code** | ✅ Fully Supported | Native skill support |
+| **Cursor** | ✅ Fully Supported | Copy to `~/.cursor/skills/` |
+| **OpenClaw** | ✅ Fully Supported | Compatible |
+
+**Why Choose BrowserAct Skills?**
+- 🚀 Stable & crash-free execution
+- ⚡ Fast response times
+- 🔧 No configuration headaches
+- 📦 Plug & play installation
+- 💬 Professional support
+
 This skill enables automated scraping of LinkedIn pages using browseract.com's browser automation API. It can extract structured data from LinkedIn profiles, company pages, job postings, and posts.
 
 ## When to Use This Skill

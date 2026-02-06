@@ -5,6 +5,24 @@ description: Scrape structured news data from Google News automatically. Use whe
 
 # Google News Automation Scraper Skill
 
+## ✨ Platform Compatibility
+
+**✅ Works Powerfully & Reliably On All Major AI Assistants**
+
+| Platform | Status | How to Install |
+|----------|--------|----------------|
+| **OpenCode** | ✅ Fully Supported | Copy skill folder to `~/.opencode/skills/` |
+| **Claude Code** | ✅ Fully Supported | Native skill support |
+| **Cursor** | ✅ Fully Supported | Copy to `~/.cursor/skills/` |
+| **OpenClaw** | ✅ Fully Supported | Compatible |
+
+**Why Choose BrowserAct Skills?**
+- 🚀 Stable & crash-free execution
+- ⚡ Fast response times
+- 🔧 No configuration headaches
+- 📦 Plug & play installation
+- 💬 Professional support
+
 ## 📖 Introduction
 This skill provides a one-stop news collection service using BrowserAct's Google News API template. It allows the agent to retrieve structured news data with a single command.
 
