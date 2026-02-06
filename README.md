@@ -25,6 +25,9 @@ Comprehensive collection of AI-powered skills for browser automation and data co
 ### 🗺️ Local Business Data
 - google-maps-search-api
 
+### 💼 Professional Networks
+- linkedin-scraper
+
 ### 🔧 Browser Automation
 
 | Skill | Description | Version |
@@ -55,13 +58,13 @@ export BROWSERACT_API_KEY="your-api-key-here"
 **For Claude Code:**
 ```bash
 mkdir -p ~/.claude/skills
-cp -r amazon-competitor-analyzer google-maps-search-api ~/.claude/skills/
+cp -r amazon-competitor-analyzer google-maps-search-api linkedin-scraper ~/.claude/skills/
 ```
 
 **For Cursor:**
 ```bash
 mkdir -p ~/.cursor/skills
-cp -r amazon-competitor-analyzer google-maps-search-api ~/.cursor/skills/
+cp -r amazon-competitor-analyzer google-maps-search-api linkedin-scraper ~/.cursor/skills/
 ```
 
 ### Step 4: Start Using
@@ -72,6 +75,9 @@ python amazon-competitor-analyzer/amazon_competitor_analyzer.py B09G9GB4MG
 
 # Search Google Maps for businesses
 python google-maps-search-api/scripts/google_maps_search_api.py "coffee shops"
+
+# Scrape LinkedIn profiles
+python linkedin-scraper/scripts/linkedin_scraper.py "https://www.linkedin.com/in/username"
 ```
 
 ---
@@ -161,21 +167,21 @@ cp -r amazon-competitor-analyzer ~/.cursor/skills/
 
 ```bash
 mkdir -p ~/.vscode/skills
-cp -r amazon-competitor-analyzer ~/.vscode/skills/
+cp -r amazon-competitor-analyzer google-maps-search-api linkedin-scraper ~/.vscode/skills/
 ```
 
 ### For OpenCode
 
 ```bash
 mkdir -p ~/.opencode/skills
-cp -r amazon-competitor-analyzer ~/.opencode/skills/
+cp -r amazon-competitor-analyzer google-maps-search-api linkedin-scraper ~/.opencode/skills/
 ```
 
 ### For Generic AI Assistants
 
 ```bash
 mkdir -p ~/skills
-cp -r amazon-competitor-analyzer ~/skills/
+cp -r amazon-competitor-analyzer google-maps-search-api linkedin-scraper ~/skills/
 export SKILLS_PATH=~/skills
 ```
 
@@ -274,6 +280,59 @@ python google-maps-search-api/scripts/google_maps_search_api.py "cafes" "de" "de
 
 ---
 
+### 💼 linkedin-scraper
+
+Extract structured data from LinkedIn profiles, company pages, and job postings.
+
+**Features:**
+- Profile scraping (personal info, experience, education, skills)
+- Company page scraping (basic info, employees, recent posts)
+- Job posting scraping (details, requirements, compensation)
+- Structured output (JSON and Markdown formats)
+- Batch processing for multiple URLs
+- Rate limiting and error handling
+
+**Quick Start:**
+
+```bash
+# Scrape a LinkedIn profile
+python linkedin-scraper/scripts/linkedin_scraper.py "https://www.linkedin.com/in/username"
+
+# Scrape a LinkedIn company page
+python linkedin-scraper/scripts/linkedin_scraper.py "https://www.linkedin.com/company/company-name"
+
+# Scrape a LinkedIn job posting
+python linkedin-scraper/scripts/linkedin_scraper.py "https://www.linkedin.com/jobs/view/123456789"
+
+# Output as JSON
+python linkedin-scraper/scripts/linkedin_scraper.py "https://www.linkedin.com/in/username" --format json
+
+# Save to file
+python linkedin-scraper/scripts/linkedin_scraper.py "https://www.linkedin.com/in/username" -o ./output.json
+```
+
+**Parameters:**
+| Parameter | Type | Default | Description |
+|----------|------|---------|-------------|
+| url | string | - | LinkedIn URL to scrape |
+| --format | string | markdown | Output format (json/markdown) |
+| --output | string | - | Output file path |
+| --include-skills | boolean | true | Extract skills (profiles) |
+| --include-education | boolean | true | Extract education (profiles) |
+| --include-salary | boolean | true | Extract salary (jobs) |
+
+**Documentation:**
+- [SKILL.md](./linkedin-scraper/SKILL.md)
+
+**MCP Template ID:** `77973967694128706`
+
+**Output Data:**
+- Profiles: Name, headline, location, experience, education, skills, certifications
+- Companies: Name, industry, size, headquarters, about, employees, recent posts
+- Jobs: Title, company, location, requirements, salary, application details
+
+---
+
 ## Architecture
 
 ### BrowserAct API Integration
@@ -296,6 +355,7 @@ User Request → Extract ASINs → Submit Task → Poll Status → Retrieve Resu
 |-------|-------------|---------------------|
 | amazon-competitor-analyzer | 30/hour | 5-10 seconds |
 | google-maps-search-api | 60/hour | 3-5 seconds |
+| linkedin-scraper | 10/hour | 2-5 seconds |
 
 ### Error Handling
 
@@ -370,6 +430,7 @@ skill-name/
 **Current Skills:**
 - amazon-competitor-analyzer
 - google-maps-search-api
+- linkedin-scraper
 
 ### Documentation Requirements
 
