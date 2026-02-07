@@ -240,81 +240,6 @@ export SKILLS_PATH=~/skills
 
 ---
 
-## Skill Details
-
-Click on any skill above to view its detailed documentation in the SKILL.md file.
-
-### 📊 Amazon Shopping Skills
-
-| Skill | Template ID |
-|-------|-------------|
-| amazon-asin-lookup-api-skill | [View SKILL.md](./amazon-asin-lookup-api-skill/SKILL.md) |
-| amazon-product-api-skill | [View SKILL.md](./amazon-product-api-skill/SKILL.md) |
-| amazon-product-search-api-skill | [View SKILL.md](./amazon-product-search-api-skill/SKILL.md) |
-| amazon-reviews-api-skill | [View SKILL.md](./amazon-reviews-api-skill/SKILL.md) |
-| amazon-competitor-analyzer | [View SKILL.md](./amazon-competitor-analyzer/SKILL.md) |
-
-### 🗺️ Google Maps Skills
-
-| Skill | Template ID |
-|-------|-------------|
-| google-maps-api-skill | [View SKILL.md](./google-maps-api-skill/SKILL.md) |
-| google-maps-search-api-skill | [View SKILL.md](./google-maps-search-api-skill/SKILL.md) |
-| google-maps-reviews-api-skill | [View SKILL.md](./google-maps-reviews-api-skill/SKILL.md) |
-
-### 📰 News & Media
-
-| Skill | Template ID |
-|-------|-------------|
-| google-news-api-skill | [View SKILL.md](./google-news-api-skill/SKILL.md) |
-
----
-
-## Rate Limiting
-
-**Features:**
-- Keyword-based news search
-- Time range filtering (past hour, 24 hours, week, year)
-- Batch extraction (up to 100+ articles)
-- Multi-language support (15+ languages)
-- Author and source information extraction
-- Real-time news monitoring
-- Structured data output (JSON)
-
-**Quick Start:**
-
-```bash
-# Get latest news on a topic
-python google-news-api/scripts/google_news_api.py "AI technology" "past week" 30
-
-# Breaking news (past 24 hours)
-python google-news-api/scripts/google_news_api.py "Tesla" "past 24 hours" 20
-
-# Long-term research (past year)
-python google-news-api/scripts/google_news_api.py "climate change" "past year" 100
-```
-
-**Parameters:**
-| Parameter | Type | Default | Description |
-|----------|------|---------|-------------|
-| keywords | string | - | Search keywords or topic |
-| publish_date | string | past week | Time range (past hours, past 24 hours, past week, past year, any time) |
-| datelimit | number | 30 | Maximum articles to extract |
-
-**Documentation:**
-- [SKILL.md](./google-news-api/SKILL.md)
-
-**Workflow Template ID:** `77638424152140851`
-
-**Output Data:**
-- Headline/Title
-- Source publisher
-- Article URL
-- Published time
-- Author name
-- Full article content
-
----
 
 
 ## Architecture
@@ -454,9 +379,6 @@ All skills must include:
 - [BrowserAct API Console](https://www.browseract.com/reception/integrations)
 - [Workflow Templates](https://www.browseract.com/template?platformType=0)
 
-### Related Repositories
-
-- [seo-geo-claude-skills](https://github.com/aaron-he-zhu/seo-geo-claude-skills) - SEO and GEO skills
 
 ### Learning Resources
 
