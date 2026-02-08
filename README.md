@@ -55,6 +55,7 @@ BrowserAct skills are designed to work **powerfully and reliably** on all leadin
 
 | Skill | Description | Documentation |
 |-------|-------------|---------------|
+| [google-maps-api-skill](./google-maps-api-skill/SKILL.md) | General Google Maps API integration | [SKILL.md](./google-maps-api-skill/SKILL.md) |
 | [google-maps-search-api-skill](./google-maps-search-api-skill/SKILL.md) | Search and extract Google Maps business data | [SKILL.md](./google-maps-search-api-skill/SKILL.md) |
 | [google-maps-reviews-api-skill](./google-maps-reviews-api-skill/SKILL.md) | Extract Google Maps business reviews | [SKILL.md](./google-maps-reviews-api-skill/SKILL.md) |
 
@@ -271,6 +272,7 @@ BrowserAct skills use advanced browser automation technology to bypass anti-bot 
 | amazon-product-search-api-skill | 60/hour | 3-5 seconds |
 | amazon-reviews-api-skill | 30/hour | 5-10 seconds |
 | amazon-competitor-analyzer | 30/hour | 5-10 seconds |
+| google-maps-api-skill | 60/hour | 3-5 seconds |
 | google-maps-search-api-skill | 60/hour | 3-5 seconds |
 | google-maps-reviews-api-skill | 60/hour | 3-5 seconds |
 
@@ -350,6 +352,7 @@ skill-name/
 - amazon-product-search-api-skill
 - amazon-reviews-api-skill
 - amazon-competitor-analyzer
+- google-maps-api-skill
 - google-maps-search-api-skill
 - google-maps-reviews-api-skill
 
