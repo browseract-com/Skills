@@ -55,7 +55,6 @@ BrowserAct skills are designed to work **powerfully and reliably** on all leadin
 
 | Skill | Description | Documentation |
 |-------|-------------|---------------|
-| [google-maps-api-skill](./google-maps-api-skill/SKILL.md) | General Google Maps API integration | [SKILL.md](./google-maps-api-skill/SKILL.md) |
 | [google-maps-search-api-skill](./google-maps-search-api-skill/SKILL.md) | Search and extract Google Maps business data | [SKILL.md](./google-maps-search-api-skill/SKILL.md) |
 | [google-maps-reviews-api-skill](./google-maps-reviews-api-skill/SKILL.md) | Extract Google Maps business reviews | [SKILL.md](./google-maps-reviews-api-skill/SKILL.md) |
 
@@ -128,9 +127,6 @@ python google-maps-search-api-skill/scripts/maps_search.py "restaurants"
 
 # Google Maps Reviews
 python google-maps-reviews-api-skill/scripts/reviews.py "restaurant-name"
-
-# Google News
-python google-news-api-skill/scripts/google_news.py "AI technology" "past week" 30
 ```
 
 ---
@@ -213,34 +209,32 @@ git clone https://github.com/browseract-com/skills.git ~/.claude/skills/browsera
 
 ```bash
 mkdir -p ~/.cursor/skills
-cp -r amazon-* google-maps-* google-news-api-skill 【ZH】comprehensive-seo-analyzer ~/.cursor/skills/
+cp -r amazon-* google-maps-* ~/.cursor/skills/
 ```
 
 ### For VS Code (Copilot)
 
 ```bash
 mkdir -p ~/.vscode/skills
-cp -r amazon-* google-maps-* google-news-api-skill ~/.vscode/skills/
+cp -r amazon-* google-maps-* ~/.vscode/skills/
 ```
 
 ### For OpenCode
 
 ```bash
 mkdir -p ~/.opencode/skills
-cp -r amazon-* google-maps-* google-news-api-skill ~/.opencode/skills/
+cp -r amazon-* google-maps-* ~/.opencode/skills/
 ```
 
 ### For Generic AI Assistants
 
 ```bash
 mkdir -p ~/skills
-cp -r amazon-* google-maps-* google-news-api-skill ~/skills/
+cp -r amazon-* google-maps-* ~/skills/
 export SKILLS_PATH=~/skills
 ```
 
 ---
-
-
 
 ## Architecture
 
@@ -272,9 +266,13 @@ BrowserAct skills use advanced browser automation technology to bypass anti-bot 
 
 | Skill | Max Requests | Recommended Interval |
 |-------|-------------|---------------------|
+| amazon-asin-lookup-api-skill | 60/hour | 3-5 seconds |
+| amazon-product-api-skill | 60/hour | 3-5 seconds |
+| amazon-product-search-api-skill | 60/hour | 3-5 seconds |
+| amazon-reviews-api-skill | 30/hour | 5-10 seconds |
 | amazon-competitor-analyzer | 30/hour | 5-10 seconds |
-| google-maps-search-api | 60/hour | 3-5 seconds |
-| google-news-api | 60/hour | 3-5 seconds |
+| google-maps-search-api-skill | 60/hour | 3-5 seconds |
+| google-maps-reviews-api-skill | 60/hour | 3-5 seconds |
 
 ### Error Handling
 
@@ -352,10 +350,8 @@ skill-name/
 - amazon-product-search-api-skill
 - amazon-reviews-api-skill
 - amazon-competitor-analyzer
-- google-maps-api-skill
 - google-maps-search-api-skill
 - google-maps-reviews-api-skill
-- google-news-api-skill
 
 ### Documentation Requirements
 
