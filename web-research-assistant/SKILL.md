@@ -93,9 +93,9 @@ python web-research-assistant/scripts/research.py "industry data" -o research_re
 ## Features
 
 
-1.**No hallucinations, ensuring stable and accurate data extraction**: Pre-set workflows eliminate AI-generated hallucinations.
+1. **No hallucinations, ensuring stable and accurate data extraction**: Pre-set workflows eliminate AI-generated hallucinations.
 
-2.**No human verification challenges**: Built-in bypass mechanisms eliminate the need to handle reCAPTCHA or other verification challenges.
+2. **No human verification challenges**: Built-in bypass mechanisms eliminate the need to handle reCAPTCHA or other verification challenges.
 
 3. **No IP access restrictions or geofencing**: Overcomes regional IP limitations for stable global access.
 
@@ -103,7 +103,6 @@ python web-research-assistant/scripts/research.py "industry data" -o research_re
 
 5. **Exceptional cost-effectiveness**: Significantly reduces data acquisition costs compared to token-intensive AI solutions.
 
-Translated with DeepL.com (free version)
 
 ---
 
