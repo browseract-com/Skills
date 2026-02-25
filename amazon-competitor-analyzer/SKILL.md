@@ -93,6 +93,25 @@ python amazon-competitor-analyzer/amazon_competitor_analyzer.py B09G9GB4MG -o ./
 | --format | string | all | Output format (csv/markdown/json/all) |
 | --api-key | string | env | BrowserAct API key |
 
+## Dependencies
+
+This skill requires the following Python packages:
+
+```bash
+pip install requests
+```
+
+Optional (for automatic .env loading):
+```bash
+pip install python-dotenv
+```
+
+## Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| BROWSERACT_API_KEY | Yes | Your BrowserAct API key. Get it from [BrowserAct Console](https://www.browseract.com/reception/integrations) |
+
 ## Error Handling
 
 - **Invalid API Key**: Check BROWSERACT_API_KEY environment variable
