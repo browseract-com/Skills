@@ -26,11 +26,11 @@ This skill scrapes Amazon product data from user-provided ASINs using browseract
 
 ## Features
 
-1. **No hallucinations, ensuring stable and accurate data extraction**: Pre-set workflows eliminate AI-generated hallucinations.
-2. **No CAPTCHA challenges**: Built-in bypass mechanisms eliminate the need to handle reCAPTCHA.
-3. **No IP Access Restrictions or Geofencing**: Overcomes geographic IP limitations.
-4. **Faster Execution Speed**: Tasks complete more rapidly than purely AI-driven solutions.
-5. **Exceptional Cost Efficiency**: Significantly reduces data acquisition costs.
+1. **Stable and accurate data extraction**: Pre-set workflows ensure consistent results.
+2. **Browser automation**: Uses BrowserAct's automated browser instances for reliable data collection.
+3. **Global accessibility**: BrowserAct provides servers in multiple regions.
+4. **Fast execution**: Optimized workflow templates complete tasks quickly.
+5. **Cost efficient**: Reduces manual research time and associated costs.
 
 ## Prerequisites
 
@@ -42,9 +42,17 @@ You need a BrowserAct.com account and API key:
 2. Sign up for an account
 3. Navigate to [API Settings](https://www.browseract.com/reception/integrations)
 4. Generate an API key
-5. Store your API key securely
 
 ### Environment Configuration
+
+Copy the `.env.example` file to `.env` and add your API key:
+
+```bash
+cp .env.example .env
+# Edit .env and replace YOUR_API_KEY_HERE with your actual API key
+```
+
+Or set as environment variable:
 
 ```bash
 export BROWSERACT_API_KEY="your-api-key-here"
