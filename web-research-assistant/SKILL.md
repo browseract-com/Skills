@@ -90,17 +90,20 @@ python web-research-assistant/scripts/research.py "industry data" -o research_re
 
 ---
 
-## 能力特性 （Features）
+## Features
 
-1.**没有幻觉，确保稳定精准提取数据**：预设工作流，规避AI 生成式幻觉。
 
-2.**没有人机验证问题**：内置绕过机制，无需处理 reCAPTCHA 或其他验证挑战。
+1.**No hallucinations, ensuring stable and accurate data extraction**: Pre-set workflows eliminate AI-generated hallucinations.
 
-3.**没有 IP 访问限制和电子围栏**：突破地域 IP 限制，确保全球范围内稳定访问。
+2.**No human verification challenges**: Built-in bypass mechanisms eliminate the need to handle reCAPTCHA or other verification challenges.
 
-4.**执行速度更敏捷**：相比纯 AI 驱动的浏览器自动化方案，任务执行更快速。
+3. **No IP access restrictions or geofencing**: Overcomes regional IP limitations for stable global access.
 
-5.**极高的成本效益**：相比大量消耗 Token 的 AI 方案，能显著降低数据获取成本。
+4. **Faster execution speed**: Tasks complete more rapidly than purely AI-driven browser automation solutions.
+
+5. **Exceptional cost-effectiveness**: Significantly reduces data acquisition costs compared to token-intensive AI solutions.
+
+Translated with DeepL.com (free version)
 
 ---
 
